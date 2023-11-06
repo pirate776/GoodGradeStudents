@@ -1,7 +1,21 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 
+@NgModule({
+  declarations: [
+     AppComponent,
+     TestComponent
+  ],
+  imports: [
+     BrowserModule,
+     FormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
     imports: [RouterTestingModule],
